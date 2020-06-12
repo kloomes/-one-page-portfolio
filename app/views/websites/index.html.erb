@@ -3,7 +3,9 @@
     Karl Loomes
   </h1>
   <div class="button-container">
-    <%= link_to "Portfolio", websites_path, class: "my-button" %>
+    <a class="my-button" href="#portfolio">
+      Portfolio
+    </a>
     <a class="my-button" href="#about">
       About
     </a>
@@ -27,8 +29,12 @@
     Mobile
   </div>
 </div>
-<div class="websites-grid">
+<div class="websites-grid" id="portfolio">
+  <% @websites.each do |website| %>
+    <div class="website-card" style="background-image: url(<%= image_path website.laptop_pic %>)">
 
+    </div>
+  <% end %>
 </div>
 <div class="contact-bar" id="contact">
   <a href="https://www.linkedin.com/in/karl-loomes" target="_blank">
