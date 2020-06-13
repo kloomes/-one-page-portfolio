@@ -6,3 +6,15 @@
   background-position: center;
   background-size: cover;
 }
+
+@media only screen and (max-width: 1500px) {
+  .website-card {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .website-card {
+    width: 80vw;
+  }
+}
