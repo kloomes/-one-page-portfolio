@@ -32,7 +32,13 @@
 <div class="websites-grid" id="portfolio">
   <% @websites.each do |website| %>
     <div class="website-card" style="background-image: url(<%= image_path website.laptop_pic %>)">
-
+      <div class="website-card-hidden">
+        <h2><%= website.name %></h2>
+        <a href=<%= website.web_link %> target="_blank"><%= website.web_link %></a><br>
+        <a href=<%= website.github_link %> target="_blank"><%= website.github_link %></a>
+        <p><%= website.description %></p>
+        <p><%= website.tags %></p>
+      </div>
     </div>
   <% end %>
 </div>
@@ -44,3 +50,11 @@
     <i class="fab fa-github-square"></i>
   </a>
 </div>
+
+t.string "name"<!--
+    t.text "description"
+    t.string "web_link"
+    t.string "github_link"
+    t.string "laptop_pic"
+    t.string "mobile_pic"
+    t.string "tags" -->

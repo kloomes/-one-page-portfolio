@@ -7,6 +7,45 @@
   background-size: cover;
 }
 
+.website-card-hidden {
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.5em;
+  p {
+    opacity: 0;
+  }
+  a {
+    color: white;
+    opacity: 0;
+  }
+  a:hover {
+    color: black;
+    font-weight: bold;
+  }
+  h2 {
+    font-weight: bold;
+    opacity: 0;
+    font-family: 'Patrick Hand', cursive;
+  }
+}
+
+.website-card-hidden:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  p {
+    opacity: 1;
+  }
+  a {
+    opacity: 1;
+  }
+  h2 {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1500px) {
   .website-card {
     width: 40vw;
